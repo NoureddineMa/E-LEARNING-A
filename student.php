@@ -60,74 +60,8 @@
                     </thead>
                     
                     <tbody>
-                    <tr class="bg-white ">
-                        <th scope="row" class="d-none d-sm-block"><img src="assets/img/student.jpg"  width="65px" alt="image représente étudiants"> </th>
-                        <td>maher</td>
-                        <td  class="d-none d-sm-table-cell">noureddinemaher13@gmail.com</td>
-                        <td class="d-none d-sm-table-cell">0623329476</td>
-                        <td>525252525255252</td>
-                        <td class="d-none d-sm-table-cell">08-Dec, 2021</td>
-                        <td><a href="#"><i class="fal fa-pen fs-6 text-info"></a></i></td>
-                        <td><a href="#"><i class="fal fa-trash fs-6 text-info"></i></a></td>
-                    </tr>
-                    <th>
-                    <tr class=" bg-white ">
-                        <th scope="row" class="d-none d-sm-block"><img src="assets/img/student.jpg"  width="65px" alt="image représente étudiants"> </th>
-                        <td>maher</td>
-                        <td class="d-none d-sm-table-cell">noureddinemaher13@gmail.com</td>
-                        <td class="d-none d-sm-table-cell">0623329476</td>
-                        <td>525252525255252</td>
-                        <td class="d-none d-sm-table-cell">08-Dec, 2021</td>
-                        <td><a href="#"><i class="fal fa-pen fs-6 text-info"></a></i></td>
-                        <td><a href="#"><i class="fal fa-trash fs-6 text-info"></i></a></td>
-                    </tr>
-                    <th>
-                    <tr class="bg-white">
-                        <th scope="row" class="d-none d-sm-block"><img src="assets/img/student.jpg"  width="65px" alt="image représente étudiants"> </th>
-                        <td>maher</td>
-                        <td class="d-none d-sm-table-cell">noureddinemaher13@gmail.com</td>
-                        <td class="d-none d-sm-table-cell">0623329476</td>
-                        <td>525252525255252</td>
-                        <td class="d-none d-sm-table-cell">08-Dec, 2021</td>
-                        <td><a href="#"><i class="fal fa-pen fs-6 text-info"></a></i></td>
-                        <td><a href="#"><i class="fal fa-trash fs-6 text-info"></i></a></td>
-                    </tr>
-                    <th>
-                    <tr class="bg-white">
-                        <th scope="row" class="d-none d-sm-block"> <img src="assets/img/student.jpg"  width="65px" alt="image représente étudiants"> </th>
-                        <td>maher</td>
-                        <td class="d-none d-sm-table-cell">noureddinemaher13@gmail.com</td>
-                        <td>0623329476</td>
-                        <td class="d-none d-sm-table-cell">525252525255252</td>
-                        <td class="d-none d-sm-table-cell">08-Dec, 2021</td>
-                        <td><a href="#"><i class="fal fa-pen fs-6 text-info"></a></i></td>
-                        <td><a href="#"><i class="fal fa-trash fs-6 text-info"></i></a></td>
-                    </tr>
-                    <th>
-                    <tr class= bg-white ">
-                        <th scope="row" class="d-none d-sm-block"> <img src="assets/img/student.jpg"  width="65px" alt="image représente étudiants"></th>
-                        <td>maher</td>
-                        <td class="d-none d-sm-table-cell">noureddinemaher13@gmail.com</td>
-                        <td class="d-none d-sm-table-cell">0623329476</td>
-                        <td>525252525255252</td>
-                        <td class="d-none d-sm-table-cell">08-Dec, 2021</td>
-                        <td><a href="#"><i class="fal fa-pen fs-6 text-info"></a></i></td>
-                        <td><a href="#"><i class="fal fa-trash fs-6 text-info"></i></a></td>
-                    </tr>
-                    <th>
-                    <tr class=" bg-white">
-                        <th scope="row" class="d-none d-sm-block"> <img src="assets/img/student.jpg"  width="65px" alt="image représente étudiants"> </th>
-                        <td>maher</td>
-                        <td class="d-none d-sm-table-cell">noureddinemaher13@gmail.com</td>
-                        <td class="d-none d-sm-table-cell">0623329476</td>
-                        <td>525252525255252</td>
-                        <td class="d-none d-sm-table-cell">08-Dec, 2021</td>
-                        <td><a href="#"><i class="fal fa-pen fs-6 text-info"></a></i></td>
-                        <td><a href="#"><i class="fal fa-trash fs-6 text-info"></i></a></td>
-                    </tr>
-                    <th>
-                        
-                    
+                    <!-- include table  -->
+                       <?php  include 'tableaustudent.php' ?>
                     </tbody>
                 </table>
                 </div>

@@ -64,43 +64,8 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="">
-                <th scope="row" >maher</th>
-                <td>First</td>
-                <td>00012223</td>
-                <td>DHS 100,000</td>
-                <td>DHS 500,000</td>
-                <td>05-Jan, 2022</td>
-                <td><i class="fal fa-eye text-info"></i></td>
-                </tr>
-                <tr>
-                    <th scope="row" >maher</th>
-                    <td>First</td>
-                    <td>00012223</td>
-                    <td>DHS 100,000</td>
-                    <td>DHS 500,000</td>
-                    <td>05-Jan, 2022</td>
-                    <td><i class="fal fa-eye text-info"></i></td>
-                    </tr>
-                    <tr class=" ">
-                        <th scope="row" >maher</th>
-                        <td>First</td>
-                        <td>00012223</td>
-                        <td>DHS 100,000</td>
-                        <td>DHS 500,000</td>
-                        <td>05-Jan, 2022</td>
-                        <td><i class="fal fa-eye text-info"></i></td>
-                        </tr>
-                        <tr >
-                            <th scope="row" >maher</th>
-                            <td>First</td>
-                            <td>00012223</td>
-                            <td>DHS 100,000</td>
-                            <td>DHS 500,000</td>
-                            <td>05-Jan, 2022</td>
-                            <td><i class="fal fa-eye text-info"></i></td>
-                            </tr>
-              
+                <!-- include table -->
+            <?php  include 'tableaupayment.php' ?>   
             </tbody>
           </table>
          
