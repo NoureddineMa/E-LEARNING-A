@@ -13,7 +13,7 @@
   <!-- start side bar -->
   <?php include 'sidebar.php' ;?>   
                  <!-- end side bar -->
-
+<div class="col overflow-auto">
             <!-- start nav bar  -->
             <?php include 'navbar.php' ;?>
          <!-- end nav bar -->
@@ -56,15 +56,7 @@
                 </div>
             </div>    
         </main>
-
-        
-
-        
-
-
-
-
 </div>
-
+</div>
 </body>
 </html>
