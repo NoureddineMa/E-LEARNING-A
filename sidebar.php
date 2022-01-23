@@ -3,7 +3,7 @@
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bgc ">
             
             <div class="d-flex flex-column  align-items-center px-3 pt-2 text-white min-vh-100 ps-5 ">
-                <a href="Dashboard.php" class="d-none d-sm-inline pb-sm-3 mb-md-1 me-md-auto text-black text-decoration-none">
+            <a href="Dashboard.php" class="pb-sm-3 mb-md-1 me-md-auto text-black text-decoration-none">
                     <span class=" fs-6 py-0 me-2"></span> <h3 class=" fw-bolder text-dark  ps-2 " style="font-size: 25px;">E-classe</h3>
                 </a>
                 <div class="d-flex flex-column align-items-center ">
