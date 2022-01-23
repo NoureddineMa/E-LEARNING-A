@@ -16,5 +16,6 @@
     />
     <!-- link css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+     <link rel="icon" href="assets/img/favvpng.png">
     <title> <?php echo $title; ?> </title>
   </head>
