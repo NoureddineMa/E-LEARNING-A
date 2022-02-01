@@ -24,9 +24,9 @@
                 <h5 class=" fw-bolder d-none d-sm-block mx-3">student list</h5>
                 <div class="d-flex align-items-center">
                     <i class="far fs-6 fa-sort me-3 text-info d-sm-block"></i>
-                    <button class="add btn btn-info text text-white text-uppercase mx-4 py-2 ">
+                    <a class="add btn btn-info text text-white text-uppercase mx-4 py-2 " href="Add_student.php">
                         add new student
-                    </button>
+                    </a>
                 </div>
             </div>
         <hr>

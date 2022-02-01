@@ -10,7 +10,7 @@
   <!-- start body  -->
   <body class="for-bg">
     <section
-      class="container-fluid d-flex justify-content-center align-items-center min-vh-100"
+      class="container-fluid d-flex justify-content-center align-items-center  min-vh-100"
     >
       <section
         class="rounded p-4 col-lg-4 col-md-6 col-sm-7 bg-white shadow px-5"

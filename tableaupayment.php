@@ -1,46 +1,8 @@
 <?php 
-                
-                $tableaupayment = [
-                                  [
-                                    'name' => 'maher',
-                                    'Payment_Schedule' => 'First',
-                                    'Bill_Number' => '00012223',
-                                    'Amount_Paid' => 'DHS 100,000',
-                                    'Balance_amount' => 'DHS 500,000',
-                                    'Date' => '05-Jan, 2022',
-
-                                  ],
-                                  [
-                                    'name' => 'Lahlali',
-                                    'Payment_Schedule' => 'First',
-                                    'Bill_Number' => '00012223',
-                                    'Amount_Paid' => 'DHS 100,000',
-                                    'Balance_amount' => 'DHS 500,000',
-                                    'Date' => '05-Jan, 2022',
-
-                                  ],
-                                  [
-                                    'name' => 'Yahya',
-                                    'Payment_Schedule' => 'First',
-                                    'Bill_Number' => '00012223',
-                                    'Amount_Paid' => 'DHS 100,000',
-                                    'Balance_amount' => 'DHS 500,000',
-                                    'Date' => '05-Jan, 2022',
-
-                                  ],
-                                  [
-                                    'name' => 'Boukhari',
-                                    'Payment_Schedule' => 'First',
-                                    'Bill_Number' => '00012223',
-                                    'Amount_Paid' => 'DHS 100,000',
-                                    'Balance_amount' => 'DHS 500,000',
-                                    'Date' => '05-Jan, 2022',
-
-                                  ],
-                                  
-
-                                  ];
-                foreach ($tableaupayment as $table){
+                $table_payment = file_get_contents("payment.json");
+                $table_payment = json_decode($table_payment,true);
+               
+                foreach ($table_payment as $table){
                     echo '
                 <th scope="row" >'.$table['name'].'</th>
                 <td>'.$table['Payment_Schedule'].'</td>

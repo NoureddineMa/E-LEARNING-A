@@ -18,28 +18,28 @@
                             <i class="fal fa-home-lg-alt px-1 ic"></i> <span class="ms-1 d-none d-sm-inline mt-4  prop">Home</span>
                         </a>
                     </li>
-                    <li class="">
+                    <li>
                         <a href="#" data-bs-toggle="collapse" class="btn  align-middle text-dark">
                             <i  class="far fa-bookmark px-1 ic " ></i> <span class="ms-1 d-none d-sm-inline  prop">Course</span> </a>
                     </li>
-                    <li class="">
+                    <li>
                         <a href="student.php" class="btn  align-middle  text-dark">
                             <i class="fal fa-graduation-cap ic"></i> <span class="ms-1 d-none d-sm-inline prop">Students</span></a>
                     </li>
-                    <li class="">
+                    <li>
                         <a href="Payment.php" data-bs-toggle="collapse" class="btn    align-middle text-dark ">
                             <i class="far fa-usd-square ic "></i> <span class="ms-1 d-none d-sm-inline prop">Payment</span></a>
                     </li>
-                    <li class="">
+                    <li>
                         <a href="#" data-bs-toggle="collapse" class="btn  align-middle text-dark ">
                             <i class="fal fa-file-chart-line ic"></i> <span class="ms-1 d-none d-sm-inline prop">Report</span></a>
                     </li>
-                    <li  class="" >
+                    <li>
                         <a href="#" data-bs-toggle="collapse" class="btn align-middle text-dark  ">
                             <i class="fal fa-sliders-v-square ic "></i> <span class="ms-1 d-none d-sm-inline prop">Settings</span></a>
                     </li>
                     
-                    <li class="">
+                    <li>
                         <a href="index.php" class="btn mt-sm-4   text-dark">
                             <span class="d-none d-sm-inline px-sm-1 prop">Logout</span><i class="fal fa-sign-out-alt fs-5 ic "></i></a>
                     </li>
