@@ -66,9 +66,10 @@ $result = mysqli_query($conn,"SELECT * FROM pstudents");
                           <td><?php echo $row["phone"]?></td>                          
                           <td><?php echo $row["enroll_number"]?></td>
                           <td><?php echo $row["date_of_addmision"]?></td>
-                          <td><a href='view.php' class='btn btn-sm btn-outline-info'>view</a>                        
-                              <a href='update.php' class='btn btn-sm btn-outline-info'>update</a>
-                              <a href='delete.php' class='btn btn-sm btn-outline-info'>delete</a>
+                          <td>                     
+                               <a href="Update_student.php?id=<?php echo $row["id"]; ?>"><i class="fal fa-pen fs-6 text-info mx-2"></a></i>
+                               <a href="delete-process.php?id=<?php echo $row["id"]; ?>"><i class="fal fa-trash fs-6 mx-2 text-info"></i></a> 
+                              
                           </td> 
 
                           

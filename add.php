@@ -35,9 +35,7 @@ require_once('connexion.php');
 			'$email','$phone','$enroll_number','$date_of_admission')";
 		
 		if(mysqli_query($conn, $sql)){
-			echo "<h3>data stored in a database successfully."
-				. " Please browse your localhost php my admin"
-				. " to view the updated data</h3>";
+			header('location:student.php');
 
 			echo nl2br("\n$img\n$id\n$name\n $email\n "
 				. "$phone\n $enroll_number\n $date_of_admission");

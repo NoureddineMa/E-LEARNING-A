@@ -39,7 +39,6 @@
   </div>
   <div class="col-auto text-center ">
       <input type="submit" class="btn btn-info text-white mt-4  px-5 py-2 " name="save"  value="save"></input>
-      <a href="student.php"><button type="submit" class="btn btn-secondary text-white mt-4  px-5 py-2 " >Back</button></a>
 
     </div>
 </form>

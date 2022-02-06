@@ -12,8 +12,8 @@ if(isset($_POST['save']))
 	 $sql = "INSERT INTO pstudents (image,name,email,phone,enroll_number,date_of_addmision)
 	 VALUES ('$image','$name','$email','$phone','$enroll_number','$date_of_addmision')";
 	 if (mysqli_query($conn, $sql)) {
-		echo "New record created successfully !";
-	 } else {
+		header('location:student.php');
+	} else {
 		echo "Error: " . $sql . "
 " . mysqli_error($conn);
 	 }
