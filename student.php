@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php 
+include_once 'connexion.php';
+$result = mysqli_query($conn,"SELECT * FROM pstudents");
+?>
 
 <?php 
           $title = 'Student';
@@ -49,8 +53,30 @@
                     </thead>
                     
                     <tbody>
-                    <!-- include table  -->
-                       <?php  include 'tableaustudent.php' ?>
+                    <?php
+                     
+                      $i=0;
+                      while($row = mysqli_fetch_array($result)) {
+                      ?>
+                    
+                     <tr class='bg-white'>
+                          <td><img alt=student-picture src='<?php echo $row["image"]?>' class='rounded-circle' style= 'width:60px; height:60px;'></td>
+                          <td><?php echo $row["name"]?></td>
+                          <td><?php echo $row["email"]?></td>                          
+                          <td><?php echo $row["phone"]?></td>                          
+                          <td><?php echo $row["enroll_number"]?></td>
+                          <td><?php echo $row["date_of_addmision"]?></td>
+                          <td><a href='view.php' class='btn btn-sm btn-outline-info'>view</a>                        
+                              <a href='update.php' class='btn btn-sm btn-outline-info'>update</a>
+                              <a href='delete.php' class='btn btn-sm btn-outline-info'>delete</a>
+                          </td> 
+
+                          
+                      </tr>
+                      <?php
+                       $i++;
+                      }
+                     ?>
                     </tbody>
                 </table>
                 </div>
