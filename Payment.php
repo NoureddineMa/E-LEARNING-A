@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-      
+<?php 
+include_once 'connexion.php';
+$result = mysqli_query($conn,"SELECT * FROM payments");
+?>
     <?php 
           $title = 'Payment';
           include 'head.php';
@@ -31,7 +34,7 @@
             <thead>
               <tr>
                 <th scope="col" class="text-muted h6 ">Name</th>
-                <th scope="col" class="text-muted h6 " >Payment Schedule</th>
+                <th scope="col" class="text-muted h6 ">Payment Schedule</th>
                 <th scope="col" class="text-muted h6 ">Bill Number</th>
                 <th scope="col" class="text-muted h6 ">Amount Paid</th>
                 <th scope="col" class="text-muted h6 ">Balance amount</th>
@@ -40,8 +43,31 @@
               </tr>
             </thead>
             <tbody>
-                <!-- include table -->
-            <?php  include 'tableaupayment.php' ?>   
+            <?php
+                     
+                     $i=0;
+                     while($row = mysqli_fetch_array($result)) {
+                     ?>
+                    
+                    <tr class='bg-white'>
+                         <td><?php echo $row["name"]?></td>
+                         <td><?php echo $row["payment schedule"]?></td>                          
+                         <td><?php echo $row["bill number"]?></td>                          
+                         <td><?php echo $row["amount paid"]?></td>
+                         <td><?php echo $row["balance amount"]?></td>
+                         <td><?php echo $row["date"]?></td>
+                         <td>                     
+                          <a href="Update_student.php?id=<?php echo $row["id"]; ?> ">  <i class="fas fa-eye"> </a></i>
+                               
+                             
+                         </td> 
+
+                         
+                     </tr>
+                     <?php
+                      $i++;
+                     }
+                    ?>  
             </tbody>
           </table>
          

@@ -42,7 +42,7 @@ $result = mysqli_query($conn,"SELECT * FROM pstudents");
                 <table class="table align-middle table-borderless ">
                     <thead>
                     <tr class="text-capitalize  ">
-                        <th scope="col" class="d-none d-sm-block"></th>
+                        
                         <th scope="col" class="text-muted h6 ">name</th>
                         <th scope="col" class="d-none d-sm-table-cell text-muted h6">email</th>
                         <th scope="col" class="d-none d-sm-table-cell text-muted h6">phone</th>
@@ -61,6 +61,7 @@ $result = mysqli_query($conn,"SELECT * FROM pstudents");
                     
                      <tr class='bg-white'>
                           <td><img alt=student-picture src='<?php echo $row["image"]?>' class='rounded-circle' style= 'width:60px; height:60px;'></td>
+                          
                           <td><?php echo $row["name"]?></td>
                           <td><?php echo $row["email"]?></td>                          
                           <td><?php echo $row["phone"]?></td>                          
@@ -69,7 +70,6 @@ $result = mysqli_query($conn,"SELECT * FROM pstudents");
                           <td>                     
                                <a href="Update_student.php?id=<?php echo $row["id"]; ?>"><i class="fal fa-pen fs-6 text-info mx-2"></a></i>
                                <a href="delete-process.php?id=<?php echo $row["id"]; ?>"><i class="fal fa-trash fs-6 mx-2 text-info"></i></a> 
-                              
                           </td> 
 
                           
