@@ -57,7 +57,7 @@ $result = mysqli_query($conn,"SELECT * FROM payments");
                          <td><?php echo $row["balance amount"]?></td>
                          <td><?php echo $row["date"]?></td>
                          <td>                     
-                          <a href="Update_student.php?id=<?php echo $row["id"]; ?> ">  <i class="fas fa-eye"> </a></i>
+                        <a><i class="fas fa-eye text-info"></i></a>
                                
                              
                          </td> 

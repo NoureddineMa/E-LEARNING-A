@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "maher_db";
 $database="e_classe_db";
 
 // Create connection

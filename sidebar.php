@@ -19,7 +19,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" data-bs-toggle="collapse" class="btn  align-middle text-dark">
+                        <a href="courses.php" data-bs-toggle="collapse" class="btn  align-middle text-dark">
                             <i  class="far fa-bookmark px-1 ic " ></i> <span class="ms-1 d-none d-sm-inline  prop">Course</span> </a>
                     </li>
                     <li>

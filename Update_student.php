@@ -21,7 +21,7 @@ if(isset($_POST['save'])){
 
 <body class="for-bg vh-100">
     <div class="container-fluid text-black  py-4 ">
-<h2 class="text-center fw-bold">ADD a New Student</h2>
+<h2 class="text-center fw-bold">Update a  Student</h2>
 </div>
 <div class="d-flex flex-column justify-content-center align-items-center ">
 <form method="POST"  class="container w-50 bg-white px-4 rounded py-4">

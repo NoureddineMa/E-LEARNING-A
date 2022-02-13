@@ -19,15 +19,16 @@ require_once('connexion.php');
 			die("ERROR: Could not connect. "
 				. mysqli_connect_error());
 		}
+
+		// need a code for images !!
 		
 		// Taking all 5 values from the form data(input)
-		$img = $_REQUEST['img'];
-        $id = $_REQUEST['id'];
-        $name = $_REQUEST['name'];
-		$email = $_REQUEST['email'];
-		$phone = $_REQUEST['phone'];
-		$enroll_number = $_REQUEST['enroll_number'];
-		$date_of_admission = $_REQUEST['date_of_admission'];
+		$img = $_POST['image'];
+        $id = $_R = $_POST['name'];
+		$email = $_POST['email'];
+		$phone = $_POST['phone'];
+		$enroll_number = $_POST['enroll_number'];
+		$date_of_admission = $_POST['date_of_admission'];
 		
 		// Performing insert query execution
 		// here our table name is college
@@ -49,5 +50,4 @@ require_once('connexion.php');
 		?>
 	
 </body>
-
 </html>
