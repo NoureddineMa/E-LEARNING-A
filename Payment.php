@@ -5,7 +5,7 @@ include_once 'connexion.php';
 $result = mysqli_query($conn,"SELECT * FROM payments");
 ?>
     <?php 
-          $title = 'Payment';
+          $title = 'Payments';
           include 'head.php';
       
    ?>
@@ -45,16 +45,16 @@ $result = mysqli_query($conn,"SELECT * FROM payments");
             <tbody>
             <?php
                      
-                     $i=0;
+                    
                      while($row = mysqli_fetch_array($result)) {
                      ?>
                     
                     <tr class='bg-white'>
                          <td><?php echo $row["name"]?></td>
-                         <td><?php echo $row["payment schedule"]?></td>                          
-                         <td><?php echo $row["bill number"]?></td>                          
-                         <td><?php echo $row["amount paid"]?></td>
-                         <td><?php echo $row["balance amount"]?></td>
+                         <td><?php echo $row["payment_schedule"]?></td>                          
+                         <td><?php echo $row["bill_number"]?></td>                          
+                         <td><?php echo $row["amount_paid"]?></td>
+                         <td><?php echo $row["balance_amount"]?></td>
                          <td><?php echo $row["date"]?></td>
                          <td>                     
                         <a><i class="fas fa-eye text-info"></i></a>
@@ -65,7 +65,7 @@ $result = mysqli_query($conn,"SELECT * FROM payments");
                          
                      </tr>
                      <?php
-                      $i++;
+                      
                      }
                     ?>  
             </tbody>

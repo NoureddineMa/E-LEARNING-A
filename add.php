@@ -20,18 +20,18 @@ require_once('connexion.php');
 				. mysqli_connect_error());
 		}
 
-		// need a code for images !!
+		//  code for images !!
+
 		
 		// Taking all 5 values from the form data(input)
 		$img = $_POST['image'];
-        $id = $_R = $_POST['name'];
+        $name = $_R = $_POST['name'];
 		$email = $_POST['email'];
 		$phone = $_POST['phone'];
 		$enroll_number = $_POST['enroll_number'];
 		$date_of_admission = $_POST['date_of_admission'];
 		
-		// Performing insert query execution
-		// here our table name is college
+		
 		$sql = "INSERT INTO student VALUES ('$img','$id','$name',
 			'$email','$phone','$enroll_number','$date_of_admission')";
 		

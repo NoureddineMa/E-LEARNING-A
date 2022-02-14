@@ -6,6 +6,23 @@
 
           include 'head.php';
       
+          include 'connexion.php';
+
+
+          // Payment somme 'amount paid' 
+           $somme= " SELECT SUM(amount_paid) FROM payments";
+           $sql = mysqli_query($conn,$somme);
+           $result = mysqli_fetch_array($sql);
+           
+           // Student : 
+           $select ="SELECT * FROM pstudents";
+           $query=$conn->query($select); 
+           $compteurstudent=mysqli_num_rows($query);
+            // courses : 
+           $select="SELECT * FROM course";
+           $query=$conn->query($select);
+           $compteurcourses=mysqli_num_rows($query); 
+
    ?>
 
    <body >
@@ -23,7 +40,7 @@
                                     <i class="cap fs-1 fal fa-graduation-cap mb-2 st-ic "></i> 
                                     <p class="card-title fs-6 mb-4 text-muted">Students</p>
                                 </div>
-                              <p class="card-text text-end fw-bolder  fs-3">243</p>
+                              <p class="card-text text-end fw-bolder  fs-3"><?= $compteurstudent ?></p>
 
                             </div>
                           </div>
@@ -35,7 +52,7 @@
                                     <i class="b_mark fs-1 fal fa-bookmark mb-2 co-ic"></i> 
                                     <p class="card-title  mb-4 text-muted ">Course</p>
                                 </div>
-                              <p class="card-text text-end   fw-bolder fs-3">13</p>
+                              <p class="card-text text-end   fw-bolder fs-3"><?=$compteurcourses ?></p>
 
                             </div>
                           </div>
@@ -47,7 +64,7 @@
                                     <i class="fs-1 fal fa-usd-square mb-2 text-info"></i>
                                     <p class="mb-4 text-muted">Payments</p>
                                 </div>
-                              <p class="card-text text-end  fw-bolder fs-3"><small>DH</small> 556,000</p>
+                              <p class="card-text text-end  fw-bolder fs-3"><small>DH</small> <?=$result[0]; ?></p>
 
                             </div>
                           </div>
