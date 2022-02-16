@@ -1,15 +1,28 @@
+
 <?php
 include_once 'connexion.php';
-if(count($_POST)>0) {
-mysqli_query($conn,"UPDATE pstudents set  image='" . $_POST['image'] . "', name='" . $_POST['name'] . "', email='" . $_POST['email'] . "' ,phone='" . $_POST['phone'] . "' , enroll_number='" . $_POST['enroll_number'] . "' , date_of_addmision='" . $_POST['date_of_addmision'] .  "' WHERE id='" . $_POST['id'] .   "'");}
 
+// select les infos students pour les modifier !
 
 $result = mysqli_query($conn,"SELECT * FROM pstudents WHERE id='" . $_GET['id'] . "'");
 $row= mysqli_fetch_array($result);
+
+
+// remplace les infos par les infos entrer sur l'input !
+
+if(count($_POST)>0) {
+mysqli_query($conn,"UPDATE pstudents set  image='" . $_POST['image'] . "', name='" . $_POST['name'] . "', 
+email='" . $_POST['email'] . "' ,phone='" . $_POST['phone'] . "' , enroll_number='" . $_POST['enroll_number'] . "' ,
+ date_of_addmision='" . $_POST['date_of_addmision'] .  "' WHERE id='" . $_POST['id'] .   "'");}
+
+
+
 if(isset($_POST['save'])){
   header('location:student.php');
 }
 ?>
+
+
 <!DOCTYPE html>
 <html ang="en"> 
 

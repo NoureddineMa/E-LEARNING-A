@@ -1,11 +1,18 @@
 <?php
 include_once 'connexion.php';
+
+// select les infos students pour les modifier !
+
+$result = mysqli_query($conn,"SELECT * FROM course WHERE id='" . $_GET['id'] . "'");
+$row= mysqli_fetch_array($result);
+
+// remplace les infos par les infos entrer sur l'input !
+
 if(count($_POST)>0) {
 mysqli_query($conn,"UPDATE course set  image='" . $_POST['image'] . "', name='" . $_POST['name'] . "', lien='" . $_POST['lien']  .  "' WHERE id='" . $_POST['id'] .  "'");}
 
 
-$result = mysqli_query($conn,"SELECT * FROM course WHERE id='" . $_GET['id'] . "'");
-$row= mysqli_fetch_array($result);
+
 if(isset($_POST['save'])){
   header('location:courses.php');
 }

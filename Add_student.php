@@ -4,6 +4,11 @@
 <?php 
    $title = 'Add Student';
    include 'head.php';
+
+
+   
+
+
 ?>
 
 
