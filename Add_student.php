@@ -7,6 +7,7 @@
 ?>
 
 
+
 <body class="for-bg vh-100">
     <div class="container-fluid text-black  py-4 ">
 <h2 class="text-center fw-bold">ADD a New Student</h2>

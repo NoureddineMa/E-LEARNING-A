@@ -5,7 +5,6 @@
           $title = 'SIGN IN';
 
           include 'head.php';
-      
    ?>
   <!-- start body  -->
   <body class="for-bg">
@@ -25,7 +24,7 @@
               </p>
             </div>
             <div class="mb-1">
-              <label for="InputEmail1" class="form-label" style="font-size: 13px" ; ;">Email</label>
+              <label for="InputEmail1" class="form-label" style="font-size: 13px">Email</label>
               <input
                 type="email"
                 class="form-control py-1"
@@ -34,7 +33,7 @@
                 aria-describedby="emailHelp"
               />
             </div>
-            <div class="mb-4">
+            <div class="mb-2">
               <label for="InputPassword1" class="form-label mt-1" style="font-size: 13px"
                 >Password</label
               >
@@ -45,6 +44,12 @@
                 id="InputPassword1"
               />
             </div>
+            
+            <div class="form-check my-2">
+               <input class="form-check-input " type="checkbox" id="check1" name="chekbox" checked>
+               <label class="form-check-label">Remember me </label>
+            </div>
+            
 
             <button
               type="submit"

@@ -16,12 +16,13 @@
            
            // Student : 
            $select ="SELECT * FROM pstudents";
-           $query=$conn->query($select); 
+          $query=mysqli_query($conn,$select);
            $compteurstudent=mysqli_num_rows($query);
             // courses : 
            $select="SELECT * FROM course";
            $query=$conn->query($select);
            $compteurcourses=mysqli_num_rows($query); 
+
 
    ?>
 
