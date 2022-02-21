@@ -22,8 +22,13 @@
            $compteurstudent=mysqli_num_rows($query);
             // courses : 
            $select="SELECT * FROM course";
-           $query=$conn->query($select);
+           $query = mysqli_query($conn,$select);
            $compteurcourses=mysqli_num_rows($query); 
+
+           // Users : 
+           $select = "SELECT * FROM comptes";
+           $query = mysqli_query($conn,$select);
+           $compteurusers = mysqli_num_rows($query);
 
 
    ?>
@@ -79,7 +84,7 @@
                                     <i class="fs-1 fal fa-user mb-2 text-white"></i> 
                                     <p class="mb-4 text-white">Users</p>
                                 </div>
-                              <p class="card-text text-end fw-bolder fs-3">3</p>
+                              <p class="card-text text-end fw-bolder fs-3"><?=$compteurusers?></p>
 
                             </div>
                           </div>
