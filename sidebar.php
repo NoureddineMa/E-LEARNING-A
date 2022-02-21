@@ -8,7 +8,9 @@
                 </a>
                 <div class="d-flex flex-column align-items-center ">
                 <img src="assets/img/admin.png" alt="hugenerd" width="70" height="70" class="rounded-circle  mt-1">
-                <h4 class="text-dark mt-3 h6 " style="font-size: 14px;"> <b> Admin name </b></h4>
+                <?php if(isset($_SESSION['name']) && isset($_SESSION['email'])){ ?>
+                <h4 class="text-dark mt-3 h6 " style="font-size: 14px;"> <b> <?php echo $_SESSION['name']; ?> </b></h4>
+                <?php }?>
                 <p class="text-info" style="font-size: 11px;">Admin</p>
                 </div>
                 
@@ -40,7 +42,7 @@
                     </li>
                     
                     <li>
-                        <a href="index.php" class="btn mt-sm-4   text-dark">
+                        <a href="logout.php" class="btn mt-sm-4   text-dark">
                             <span class="d-none d-sm-inline px-sm-1 prop">Logout</span><i class="fal fa-sign-out-alt fs-5 ic "></i></a>
                     </li>
             </div>

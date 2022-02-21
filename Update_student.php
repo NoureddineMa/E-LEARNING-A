@@ -29,6 +29,10 @@ if(isset($_POST['save'])){
 <?php 
    $title = 'Add Student';
    include 'head.php';
+
+
+
+   include 'form_student.php';
 ?>
 
 

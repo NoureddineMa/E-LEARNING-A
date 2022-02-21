@@ -4,6 +4,33 @@
 <?php 
    $title = 'Add courses';
    include 'head.php';
+
+   
+   $name_courses='';
+   $err_name="";
+   $err_link="";
+   $link_courses='';
+
+     if(isset($_POST['save']))
+     {
+       if(empty($_POST['name']))
+       {
+        $err_name = "veuillez remplir ce champ !!";
+       }
+       else{
+        $name_courses = $_POST['name'];
+       }
+       if(empty($_POST['lien']))
+       {
+        $err_link = "veuillez remplir ce champ !!";
+       }
+       else{
+        $link_courses  = $_POST['lien']; 
+       }
+      
+     }
+
+
 ?>
 
 
@@ -14,7 +41,8 @@
 <div class="d-flex flex-column justify-content-center align-items-center ">
 <form method="POST" action="insert-courses.php" class="container w-50 bg-white px-4 rounded py-4">
   <div class="form-group">
-    <label for="">Nom du course</label>
+    <label for="">Nom du course</label> <br>
+    <span class="text-danger ">  <?php echo $err_name ?>   </span>
     <input type="text" class="form-control"   name="name">
   </div>
   <div class="form-group">
@@ -22,7 +50,8 @@
     <input type="file" class="form-control" alt="course picture"  name="image">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput2">Lien</label>
+    <label for="formGroupExampleInput2">Lien</label> <br>
+    <span class="text-danger">  <?php echo $err_link ?>   </span>
     <input type="lien" class="form-control  " name="lien" id="formGroupExampleInput2">
   </div>
   
